@@ -1,6 +1,6 @@
 *GaChalign* (ガチャalign) is a python implementation of [Gale-Church (1993)](http://acl.ldc.upenn.edu/J/J93/J93-1004.pdf) sentence aligner with options for _variable parameters_ (viz. _mean_, _variance_, _penalty_). 
 
-Our experiment with English-Japanese corpus from [Nanyang Technological University - Multilingual Corpus (NTU-MC)](http://aclweb.org/anthology-new/Y/Y11/Y11-1038.pdf) has shown that 
+Our experiment with English-Japanese corpus from [Nanyang Technological University - Multilingual Corpus (NTU-MC)](https://github.com/alvations/NTU-MC) has shown that 
   * aligning syllabic/logographic language (JPN) to alphabetic language (ENG) is a challenge for Gale-Church algorithm (f-score peaks at 62.9%)
   * using the calculated character mean from the unaligned text improves precision and recall of the algorithm
   * using the calculated alignment type penalties from a sample gold corpus also improves fscore 
