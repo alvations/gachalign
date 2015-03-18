@@ -1,16 +1,15 @@
 *GaChalign* (ガチャalign) is a python implementation of [Gale-Church (1993)](http://acl.ldc.upenn.edu/J/J93/J93-1004.pdf) sentence aligner with options for _variable parameters_ (viz. _mean_, _variance_, _penalty_). 
 
-Our experiment with English-Japanese corpus has shown that 
+Our experiment with English-Japanese corpus from [Nanyang Technological University - Multilingual Corpus (NTU-MC)](http://aclweb.org/anthology-new/Y/Y11/Y11-1038.pdf) has shown that 
   * aligning syllabic/logographic language (JPN) to alphabetic language (ENG) is a challenge for Gale-Church algorithm (f-score peaks at 62.9%)
   * using the calculated character mean from the unaligned text improves precision and recall of the algorithm
   * using the calculated alignment type penalties from a sample gold corpus also improves fscore 
 
 (see the full details on the experiment [here](https://db.tt/LLrul4zP))
 
-The test suite sentences are from the [Nanyang Technological University - Multilingual Corpus (NTU-MC)](http://aclweb.org/anthology-new/Y/Y11/Y11-1038.pdf)
-
 Usage
 ====
+
 To run Gale-Church algorithm with default settings as per the original paper.
 
 ```
@@ -24,22 +23,11 @@ $ python gale_church.py source_corpus target_corpus gacha
 ```
 
 
-Demo
-====
-
-```
-$ wget https://gachalign.googlecode.com/files/gachalign-v.1.1.tar.gz
-$ tar xvzf gachalign-v.1.1.tar.gz
-$ cd gachalign-v.1.1/
-$ python gale_church.py ntumc.eng ntumc.jpn 
-```
-
-----------------------------------------------------------------------------------------
 Input Corpora format
 ====
 The format for raw corpora for GaChalign is one sentence per line and paragraphs separated by "#". For example:
 
-*source_corpus*
+*source_corpus.txt*
 
 ```
 # NTU-MC/Fun
@@ -54,7 +42,7 @@ Even with the influx of vendors , the stalls offerings are very varied and you w
 Some must-try items here at Maxwell Road Hawker Market include the famous Tian Tian Chicken Rice , the traditional congee with pork and century egg from Zhen Zhen Porridge stall and the popular char kway teow from the Marina South Delicious Food stall .
 ```
 
-*target_corpus*
+*target_corpus.txt*
 
 ```
 # NTU-MC/Fun
