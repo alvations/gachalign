@@ -1,1 +1,0 @@
-#summary A python implementation of Gale-Church Sentence-level Aligner
