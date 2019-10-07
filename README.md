@@ -5,7 +5,7 @@ Our experiment with English-Japanese corpus from [Nanyang Technological Universi
   * using the calculated character mean from the unaligned text improves precision and recall of the algorithm
   * using the calculated alignment type penalties from a sample gold corpus also improves fscore 
 
-(see the full details on the experiment [here](https://db.tt/LLrul4zP))
+(see the full details on the experiment [here](https://drive.google.com/file/d/1XxCLxA99MRJbF6xzWS8WDR9igrz-m2q8/view?usp=sharing))
 
 Usage
 ====
