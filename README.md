@@ -102,6 +102,11 @@ The Gale-Church algorithm calculate the alignment cost (aka penalty) for all pos
 logP(aligntype)P(δ|aligntype)
 ```
 
+Attribution
+====
+
+This code is largely based on https://github.com/vchahun/galechurch 
+
 Citation
 ====
 The technical manual for GaChalign and the experiment results can be found in https://db.tt/LLrul4zP
